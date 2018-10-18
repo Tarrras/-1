@@ -72,9 +72,9 @@
             this.btStopTraectory = new System.Windows.Forms.Button();
             this.btStartTraectory = new System.Windows.Forms.Button();
             this.timerTraectory = new System.Windows.Forms.Timer(this.components);
-            this.lblX = new System.Windows.Forms.Label();
-            this.lblY = new System.Windows.Forms.Label();
-            this.lblZ = new System.Windows.Forms.Label();
+            this.cordX = new System.Windows.Forms.Label();
+            this.cordY = new System.Windows.Forms.Label();
+            this.cordZ = new System.Windows.Forms.Label();
             this.timerScale2 = new System.Windows.Forms.Timer(this.components);
             this.reflect = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -166,7 +166,6 @@
             this.chbRotateX.TabIndex = 0;
             this.chbRotateX.Text = "X";
             this.chbRotateX.UseVisualStyleBackColor = true;
-            this.chbRotateX.CheckedChanged += new System.EventHandler(this.chbRotateX_CheckedChanged);
             // 
             // timerRotate
             // 
@@ -540,47 +539,47 @@
             this.timerTraectory.Interval = 15;
             this.timerTraectory.Tick += new System.EventHandler(this.timerTraectory_Tick);
             // 
-            // lblX
+            // cordX
             // 
-            this.lblX.AutoSize = true;
-            this.lblX.BackColor = System.Drawing.Color.Silver;
-            this.lblX.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblX.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.lblX.Location = new System.Drawing.Point(584, 337);
-            this.lblX.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblX.Name = "lblX";
-            this.lblX.Size = new System.Drawing.Size(18, 17);
-            this.lblX.TabIndex = 8;
-            this.lblX.Text = "X";
-            this.lblX.Visible = false;
+            this.cordX.AutoSize = true;
+            this.cordX.BackColor = System.Drawing.Color.Silver;
+            this.cordX.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.cordX.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.cordX.Location = new System.Drawing.Point(584, 337);
+            this.cordX.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.cordX.Name = "cordX";
+            this.cordX.Size = new System.Drawing.Size(18, 17);
+            this.cordX.TabIndex = 8;
+            this.cordX.Text = "X";
+            this.cordX.Visible = false;
             // 
-            // lblY
+            // cordY
             // 
-            this.lblY.AutoSize = true;
-            this.lblY.BackColor = System.Drawing.Color.Silver;
-            this.lblY.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblY.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.lblY.Location = new System.Drawing.Point(286, 55);
-            this.lblY.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblY.Name = "lblY";
-            this.lblY.Size = new System.Drawing.Size(18, 17);
-            this.lblY.TabIndex = 9;
-            this.lblY.Text = "Y";
-            this.lblY.Visible = false;
+            this.cordY.AutoSize = true;
+            this.cordY.BackColor = System.Drawing.Color.Silver;
+            this.cordY.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.cordY.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.cordY.Location = new System.Drawing.Point(286, 55);
+            this.cordY.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.cordY.Name = "cordY";
+            this.cordY.Size = new System.Drawing.Size(18, 17);
+            this.cordY.TabIndex = 9;
+            this.cordY.Text = "Y";
+            this.cordY.Visible = false;
             // 
-            // lblZ
+            // cordZ
             // 
-            this.lblZ.AutoSize = true;
-            this.lblZ.BackColor = System.Drawing.Color.Silver;
-            this.lblZ.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblZ.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.lblZ.Location = new System.Drawing.Point(133, 497);
-            this.lblZ.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblZ.Name = "lblZ";
-            this.lblZ.Size = new System.Drawing.Size(18, 17);
-            this.lblZ.TabIndex = 10;
-            this.lblZ.Text = "Z";
-            this.lblZ.Visible = false;
+            this.cordZ.AutoSize = true;
+            this.cordZ.BackColor = System.Drawing.Color.Silver;
+            this.cordZ.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.cordZ.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.cordZ.Location = new System.Drawing.Point(133, 497);
+            this.cordZ.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.cordZ.Name = "cordZ";
+            this.cordZ.Size = new System.Drawing.Size(18, 17);
+            this.cordZ.TabIndex = 10;
+            this.cordZ.Text = "Z";
+            this.cordZ.Visible = false;
             // 
             // timerScale2
             // 
@@ -595,9 +594,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(939, 653);
-            this.Controls.Add(this.lblZ);
-            this.Controls.Add(this.lblY);
-            this.Controls.Add(this.lblX);
+            this.Controls.Add(this.cordZ);
+            this.Controls.Add(this.cordY);
+            this.Controls.Add(this.cordX);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
@@ -672,9 +671,9 @@
         private System.Windows.Forms.Button btStartTraectory;
         private System.Windows.Forms.Button btStopTraectory;
         private System.Windows.Forms.Timer timerTraectory;
-        private System.Windows.Forms.Label lblX;
-        private System.Windows.Forms.Label lblY;
-        private System.Windows.Forms.Label lblZ;
+        private System.Windows.Forms.Label cordX;
+        private System.Windows.Forms.Label cordY;
+        private System.Windows.Forms.Label cordZ;
         private System.Windows.Forms.Timer timerScale2;
         private System.Windows.Forms.Timer reflect;
     }
